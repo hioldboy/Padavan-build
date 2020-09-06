@@ -39,6 +39,7 @@ jobs:
     - name: Build Firmware
       env:
         TNAME: PSG1218
+        #: k2     
       run: |
         cd /opt/rt-n56u/trunk
         if [ ! -f configs/templates/$TNAME.config ] ; then
